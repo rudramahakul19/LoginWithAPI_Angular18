@@ -1,0 +1,61 @@
+
+
+  <div class="parent">
+    <div class="container">
+        <!-- Title section -->
+        <div class="title">Registration</div>
+        <div class="content">
+          <!-- Registration form -->
+          <form >
+            <div class="user-details">
+              
+              <div class="input-box width200">
+                <span class="details">First Name</span>
+                <input type="text" name="fname" [(ngModel)]="registerObj.firstName" placeholder="Enter your name" required>
+              </div>
+              
+              <div class="input-box width200">
+                <span class="details">Middle Name</span>
+                <input type="text" name="mname" [(ngModel)]="registerObj.middleName" placeholder="Enter your username" required>
+              </div>
+
+              <div class="input-box width200">
+                <span class="details">Last Name</span>
+                <input type="text" name="lname" [(ngModel)]="registerObj.lastName" placeholder="Enter your username" required>
+              </div>
+              
+              <div class="input-box">
+                <span class="details">Email</span>
+                <input type="text" name="email" [(ngModel)]="registerObj.emailId"  placeholder="Enter your email" required>
+              </div>
+              
+              <div class="input-box">
+                <span class="details">Phone Number</span>
+                <input type="text" name="phoneno" [(ngModel)]="registerObj.mobileNo" placeholder="Enter your number" required>
+              </div>
+
+              <div class="input-box">
+                <span class="details">Alt phone Number</span>
+                <input type="text" name="altphoneno" [(ngModel)]="registerObj.altMobileNo" placeholder="Enter your number" required>
+              </div>
+              
+              <div class="input-box">
+                <span class="details">Password</span>
+                <input type="text" name="password" [(ngModel)]="registerObj.password"  placeholder="Enter your password" required>
+              </div>
+              
+              
+            </div>
+        
+            <!-- Submit button -->
+            <div class="button">
+              <input type="submit" (click)="onSignUp()" value="Register">
+            </div>
+            <div class="register-link">
+                <p>Already have an account? <a routerLink="/login">Login here</a></p>
+              </div>
+          </form>
+        </div>
+      </div>
+    
+  </div>
