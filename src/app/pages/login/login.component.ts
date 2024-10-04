@@ -32,7 +32,7 @@ export class LoginComponent  {
           alert("Login Success");
 
           // Store token in local storage
-          localStorage.setItem('token',res.token);
+          localStorage.setItem('token',res.data.token);
 
           // Navigate based on role
           this.router.navigate(['/dashboard']);
